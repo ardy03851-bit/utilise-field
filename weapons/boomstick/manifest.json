@@ -1,0 +1,1 @@
+{ "name": "Boomstick", "kind": "gun", "dmg": 6, "rate": 1.2, "speed": 22, "spread": 0.3, "pellets": 6, "range": 9, "color": "#ffb36b", "order": 30 }

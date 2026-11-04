@@ -1,0 +1,1 @@
+{ "name": "Ember Wand", "kind": "gun", "dmg": 9, "rate": 4, "speed": 18, "spread": 0.1, "blast": 0.4, "range": 11, "color": "#e86a5a", "order": 100 }

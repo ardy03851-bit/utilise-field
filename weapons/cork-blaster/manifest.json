@@ -1,0 +1,1 @@
+{ "name": "Cork Blaster", "kind": "gun", "dmg": 6, "rate": 8, "speed": 24, "spread": 0.12, "range": 13, "color": "#cfd6dc", "order": 20 }

@@ -1,0 +1,4 @@
+node_modules
+tools/shot-*.png
+tools/shot-*.jpg
+tools/crop-*.png

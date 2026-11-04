@@ -1,0 +1,81 @@
+{
+ "weapons": [
+  {
+   "id": "boomstick",
+   "files": [
+    "manifest.json",
+    "weapon.png"
+   ]
+  },
+  {
+   "id": "cork-blaster",
+   "files": [
+    "manifest.json",
+    "weapon.png"
+   ]
+  },
+  {
+   "id": "daisy-pop",
+   "files": [
+    "manifest.json",
+    "weapon.png"
+   ]
+  },
+  {
+   "id": "ember-wand",
+   "files": [
+    "manifest.json",
+    "weapon.png"
+   ]
+  },
+  {
+   "id": "frost-bell",
+   "files": [
+    "manifest.json",
+    "weapon.png"
+   ]
+  },
+  {
+   "id": "honey-sting",
+   "files": [
+    "manifest.json",
+    "weapon.png"
+   ]
+  },
+  {
+   "id": "lily-launcher",
+   "files": [
+    "manifest.json",
+    "weapon.png"
+   ]
+  },
+  {
+   "id": "pea-shooter",
+   "files": [
+    "manifest.json",
+    "weapon.png"
+   ]
+  },
+  {
+   "id": "spud-cannon",
+   "files": [
+    "manifest.json",
+    "weapon.png"
+   ]
+  },
+  {
+   "id": "thunder-mug",
+   "files": [
+    "manifest.json",
+    "weapon.png"
+   ]
+  },
+  {
+   "id": "wasp-nest",
+   "files": [
+    "manifest.json",
+    "weapon.png"
+   ]
+  }
+ ]
+}

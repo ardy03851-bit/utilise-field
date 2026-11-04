@@ -1,0 +1,1 @@
+{ "name": "Spud Cannon", "kind": "gun", "dmg": 12, "rate": 1, "speed": 18, "spread": 0.04, "blast": 1.2, "range": 14, "color": "#d9b98a", "order": 50 }

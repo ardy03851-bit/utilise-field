@@ -1,0 +1,1 @@
+{ "name": "Lily Launcher", "kind": "gun", "dmg": 30, "rate": 0.8, "speed": 16, "spread": 0.03, "blast": 1.8, "range": 16, "color": "#90be6d", "order": 80 }

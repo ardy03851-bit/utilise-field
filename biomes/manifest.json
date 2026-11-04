@@ -1,0 +1,68 @@
+{
+ "biomes": [
+  {
+   "id": "autumn-woods",
+   "js": "autumn-woods.js",
+   "png": null,
+   "files": [
+    "autumn-woods.js"
+   ]
+  },
+  {
+   "id": "bamboo-valley",
+   "js": "bamboo-valley.js",
+   "png": null,
+   "files": [
+    "bamboo-valley.js"
+   ]
+  },
+  {
+   "id": "cherry-blossom",
+   "js": "cherry-blossom.js",
+   "png": null,
+   "files": [
+    "cherry-blossom.js"
+   ]
+  },
+  {
+   "id": "desert-oasis",
+   "js": "desert-oasis.js",
+   "png": null,
+   "files": [
+    "desert-oasis.js"
+   ]
+  },
+  {
+   "id": "lavender-fields",
+   "js": "lavender-fields.js",
+   "png": null,
+   "files": [
+    "lavender-fields.js"
+   ]
+  },
+  {
+   "id": "meadow",
+   "js": "meadow.js",
+   "png": null,
+   "files": [
+    "meadow.js"
+   ]
+  },
+  {
+   "id": "pine-forest",
+   "js": "pine-forest.js",
+   "png": null,
+   "files": [
+    "pine-forest.js"
+   ]
+  },
+  {
+   "id": "tropical-islands",
+   "js": "tropical-islands.js",
+   "png": null,
+   "files": [
+    "tropical-islands.js"
+   ]
+  }
+ ]
+}
