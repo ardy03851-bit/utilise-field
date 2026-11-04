@@ -33,6 +33,14 @@
    ]
   },
   {
+   "id": "frost-tundra",
+   "js": "frost-tundra.js",
+   "png": null,
+   "files": [
+    "frost-tundra.js"
+   ]
+  },
+  {
    "id": "lavender-fields",
    "js": "lavender-fields.js",
    "png": null,
@@ -62,6 +70,14 @@
    "png": null,
    "files": [
     "tropical-islands.js"
+   ]
+  },
+  {
+   "id": "volcanic-ash",
+   "js": "volcanic-ash.js",
+   "png": null,
+   "files": [
+    "volcanic-ash.js"
    ]
   }
  ]

@@ -1,0 +1,1 @@
+{ "name": "Petal Cannon", "kind": "gun", "dmg": 4, "rate": 1.7, "speed": 15, "spread": 0.3, "pellets": 4, "range": 8, "color": "#f2a6c8", "order": 55 }

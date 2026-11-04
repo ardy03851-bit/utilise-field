@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="180" height="140" viewBox="0 0 180 140">
+  <rect width="180" height="140" rx="14" fill="#f6ecd9"/>
+  <!-- bounce shadow -->
+  <ellipse cx="90" cy="116" rx="26" ry="6" fill="#00000022">
+    <animate attributeName="rx" values="26;14;26" dur="1.4s" repeatCount="indefinite"/>
+  </ellipse>
+  <!-- jelly cube bouncing -->
+  <g>
+    <animateTransform attributeName="transform" type="translate" values="0 0; 0 -34; 0 0" dur="1.4s"
+      repeatCount="indefinite" calcMode="spline" keySplines="0.2 0.7 0.5 1; 0.5 0 0.8 0.4"/>
+    <g>
+      <animateTransform attributeName="transform" type="scale" values="1.05 0.9; 0.94 1.08; 1 1; 1.05 0.9"
+        dur="1.4s" repeatCount="indefinite"/>
+      <rect x="56" y="62" width="68" height="68" rx="16" fill="#f7e9d7" stroke="#4a3f36" stroke-width="4"/>
+      <rect x="66" y="72" width="22" height="14" rx="7" fill="#ffffff" opacity="0.6"/>
+    </g>
+    <!-- scarf trailing -->
+    <path fill="none" stroke="#5bc0eb" stroke-width="10" stroke-linecap="round"
+      d="M88 70 q-14 -8 -30 -2">
+      <animate attributeName="d" values="M88 70 q-14 -8 -30 -2; M88 70 q-14 6 -30 12; M88 70 q-14 -8 -30 -2" dur="1.4s" repeatCount="indefinite"/>
+    </path>
+  </g>
+</svg>

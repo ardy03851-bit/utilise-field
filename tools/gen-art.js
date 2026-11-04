@@ -215,6 +215,40 @@ const weapons = {
     part(ctx, 100, 80, 36, 34, 10, C.grip, (p) => p(0, 0, 1, 1));                  // grip
     slash(ctx, 96, 56, 44);
   },
+  /* ---------- petal-cannon: flower-burst cannon ---------- */
+  'petal-cannon': (ctx) => {
+    part(ctx, 84, 52, 110, 34, 12, C.body, (p) => p(0, 0, 1, 1));                        // body
+    part(ctx, 188, 54, 44, 26, 11, C.accentA, (p) => p(0, 0, 1, 1));                     // muzzle shroud
+    // daisy petals around the muzzle
+    ctx.save();
+    ctx.lineWidth = 6; ctx.strokeStyle = C.outline;
+    for (let i = 0; i < 6; i++) {
+      const a = (i / 6) * Math.PI * 2;
+      ctx.beginPath();
+      ctx.ellipse(204 + Math.cos(a) * 15, 66 + Math.sin(a) * 15, 9, 6, a, 0, 7);
+      ctx.fillStyle = '#fbe3ee'; ctx.fill(); ctx.stroke();
+    }
+    ctx.beginPath(); ctx.arc(204, 66, 9, 0, 7);
+    ctx.fillStyle = C.accentC; ctx.fill(); ctx.stroke();
+    ctx.restore();
+    part(ctx, 96, 84, 34, 30, 10, C.grip, (p) => p(0, 0, 1, 1));                         // grip
+    part(ctx, 106, 40, 52, 14, 6, C.accentD, (p) => p(0, 0, 1, 1));                       // leaf rail
+    slash(ctx, 96, 58, 66);
+  },
+
+  /* ---------- boulder-sling: heavy stone howitzer ---------- */
+  'boulder-sling': (ctx) => {
+    part(ctx, 70, 58, 120, 42, 16, C.grip, (p) => p(0, 0, 1, 1));                         // heavy body
+    part(ctx, 172, 52, 62, 30, 12, C.steelDark, (p) => p(0, 0, 1, 1));                    // thick barrel
+    // stone ball at the muzzle
+    ctx.beginPath(); ctx.arc(206, 66, 19, 0, 7);
+    ctx.fillStyle = '#a8a29a'; ctx.fill();
+    ctx.lineWidth = 7; ctx.strokeStyle = C.outline; ctx.stroke();
+    ctx.beginPath(); ctx.arc(200, 60, 4, 0, 7); ctx.fillStyle = '#c0bab2'; ctx.fill();
+    part(ctx, 100, 96, 44, 28, 10, C.gripLight, (p) => p(0, 0, 1, 1));                   // grip
+    part(ctx, 124, 42, 44, 16, 6, C.copper, (p) => p(0, 0, 1, 1));                       // top rail
+    slash(ctx, 84, 66, 56);
+  },
 };
 
 /* write them out */

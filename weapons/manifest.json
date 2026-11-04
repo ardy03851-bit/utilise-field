@@ -8,6 +8,13 @@
    ]
   },
   {
+   "id": "boulder-sling",
+   "files": [
+    "manifest.json",
+    "weapon.png"
+   ]
+  },
+  {
    "id": "cork-blaster",
    "files": [
     "manifest.json",
@@ -51,6 +58,13 @@
   },
   {
    "id": "pea-shooter",
+   "files": [
+    "manifest.json",
+    "weapon.png"
+   ]
+  },
+  {
+   "id": "petal-cannon",
    "files": [
     "manifest.json",
     "weapon.png"

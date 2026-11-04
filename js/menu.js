@@ -12,7 +12,7 @@ import { UI3D } from './ui.js';
 import { Input } from './input.js';
 import { Audio } from './audio.js';
 import { SAVES } from './saves.js';
-import { BIOMES } from './core.js';
+import { BIOMES, biomeById } from './core.js';
 import { Wind } from './wind.js';
 
 export class Menu {
@@ -45,7 +45,9 @@ export class Menu {
   }
 
   _buildTitleScene() {
-    this.biome = BIOMES[(Math.random() * BIOMES.length) | 0] ?? {};
+    // biome can be forced with ?biome=<id> (used for testing/screenshots)
+    const urlBiome = new URLSearchParams(location.search).get('biome');
+    this.biome = biomeById(urlBiome) ?? BIOMES[(Math.random() * BIOMES.length) | 0] ?? {};
     Wind.set(this.biome);
     this.sky = makeSky(this.scene, this.biome, this._rng);
     this.island = makeIsland(this.scene, this.biome, this._rng, { propCount: 8 });

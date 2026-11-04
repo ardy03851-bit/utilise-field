@@ -76,9 +76,14 @@ export class BulletSystem {
       const wind = Wind.at(b.x, b.y, _w);
       b.vx += wind.x * .6 * dt;
       b.x += b.vx * dt; b.y += b.vy * dt;
-      // trail record
+      // trail record (capped by world length so slow frames don't stretch it)
       b.trail.unshift(b.x, b.y);
       if (b.trail.length > MAX_TRAIL * 2) b.trail.length = MAX_TRAIL * 2;
+      let tlen = 0;
+      for (let i = 2; i < b.trail.length; i += 2) {
+        tlen += Math.hypot(b.trail[i] - b.trail[i - 2], b.trail[i + 1] - b.trail[i - 1]);
+        if (tlen > 7) { b.trail.length = i; break; }
+      }
       // collisions
       const h = w.h(b.x);
       let dead = b.life <= 0 || Math.abs(b.x) > 95;
@@ -95,7 +100,7 @@ export class BulletSystem {
         const tx = b.trail[i * 2], ty = b.trail[i * 2 + 1];
         const t = i / (n - 1 || 1);
         // width: wider near the bullet, spiky zig-zag along the trail
-        const width = (speed * .028 + .05) * (1 - t * .6);
+        const width = (speed * .014 + .04) * (1 - t * .7);
         const zig = (i % 2 === 0 ? 1 : .45) * width;      // alternating spikes!
         const spik = Math.sin(t * 28 + b.spike) * width * .5;
         let k = draw * 6;

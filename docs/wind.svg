@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="240" height="120" viewBox="0 0 240 120">
+  <rect width="240" height="120" rx="14" fill="#fdf3e3"/>
+  <!-- wind lines -->
+  <g stroke="#b8d4e8" stroke-width="4" stroke-linecap="round" fill="none">
+    <path d="M14 30 q60 -6 130 4">
+      <animate attributeName="d" values="M14 30 q60 -6 130 4; M14 30 q60 8 130 12; M14 30 q60 -6 130 4" dur="2.4s" repeatCount="indefinite"/>
+    </path>
+    <path d="M40 62 q70 -8 150 2" stroke="#d9e8f0">
+      <animate attributeName="d" values="M40 62 q70 -8 150 2; M40 62 q70 10 150 8; M40 62 q70 -8 150 2" dur="3s" repeatCount="indefinite"/>
+    </path>
+  </g>
+  <!-- simple tree swaying -->
+  <g>
+    <animateTransform attributeName="transform" type="rotate" values="-3 120 104; 4 120 104; -3 120 104" dur="2.6s" repeatCount="indefinite"/>
+    <rect x="116" y="72" width="9" height="34" rx="4" fill="#8a6a4a"/>
+    <circle cx="120" cy="58" r="22" fill="#7fae5a"/>
+    <circle cx="108" cy="66" r="13" fill="#93c46e"/>
+    <circle cx="133" cy="64" r="12" fill="#6a9c4a"/>
+  </g>
+  <rect x="0" y="104" width="240" height="16" fill="#86b06a"/>
+</svg>

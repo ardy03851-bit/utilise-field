@@ -50,5 +50,9 @@ export const Content = {
       } catch (e) { console.warn('weapon failed', entry.id, e); }
     }
     WEAPONS.sort((a, b) => (a.order ?? 100) - (b.order ?? 100));
+    // debug handles (used by the smoke tests)
+    window.__weaponById = id => WEAPONS.find(w => w.id === id);
+    window.__WEAPONS = WEAPONS;
+    window.__BIOMES = BIOMES;
   },
 };

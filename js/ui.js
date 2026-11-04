@@ -255,8 +255,10 @@ export function textTexture(str, opts = {}) {
   const tctx = canvas.getContext('2d');
   tctx.font = font;
   tctx.textAlign = 'center'; tctx.textBaseline = 'middle';
-  if (opts.stroke) {
-    tctx.strokeStyle = opts.stroke; tctx.lineWidth = size * .16; tctx.lineJoin = 'round';
+  if (opts.stroke !== null) {
+    tctx.strokeStyle = opts.stroke ?? '#fffdf4';
+    tctx.lineWidth = opts.stroke ? size * .16 : size * .14;
+    tctx.lineJoin = 'round';
     lines.forEach((l, i) => tctx.strokeText(l, canvas.width / 2, pad / 2 + size * .6 + i * size * 1.25));
   }
   tctx.fillStyle = opts.color ?? INK;

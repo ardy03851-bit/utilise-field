@@ -1,0 +1,1 @@
+{ "name": "Boulder Sling", "kind": "gun", "dmg": 16, "rate": 0.5, "speed": 12, "spread": 0.04, "pellets": 1, "range": 13, "color": "#c9b8a0", "order": 65 }
